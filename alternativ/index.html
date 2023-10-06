@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <title>Órarend</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+
+		<div class="col-lg-3 no-print" style="min-height: 100vh; background-color: rgb(49, 49, 49); display: flex; flex-direction: column; justify-content: center; text-align: center; ">
+
+			<div  style="display:inline-block; padding-top: 20px;">
+				<button id="step" class="btn btn-info">Óra megadása</button>				
+			</div>
+
+            <div  id="hozzaad" style="display: none; padding: 40px 0px; ">
+
+               <div class="row" style="padding: 0px 0px;"> 
+                   <div class="col-md-8">
+                       <input class="form-control" id="subject_title" type="text" placeholder="Tantárgy neve" /> 
+                   </div>	
+                   <div class="col-md-4 text-left" > 
+                       <div  class="btn-warning add_subject" style="background-color: royalblue; cursor: pointer; font-weight: 600; padding: 8px; text-align: center; border-radius: 5px;">Hozzáadás +</div>
+                   </div>
+               </div>
+               <div class="row subject_wrapper" style="padding: 10px;"> 
+                   
+               </div>
+            </div>
+
+       </div>
+
+       <div class="col-lg-9" style="min-height: 100vh; background-image: url(bg.jpg); background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+        <div class="time_table_c2" style="">
+		 		<h6 style="padding: 10px;">Órarend</h6>
+		 		<div class="table-responsive" >
+					<table class="table table-bordered" style="font-size: 13px;">
+					  <thead>
+					    <tr id="table_time">
+					    	<th colspan="10%">Időpontok</th>
+					    	<th class="drop" id="t_row2_d1" colspan="10%">8:00-8:45</th>
+					    	<th class="drop" id="t_row2_d2" colspan="10%">8:55-9:40</th>
+					    	<th class="drop" id="t_row2_d3" colspan="10%">9:55-10:40</th>
+					    	<th class="drop" id="t_row2_d4" colspan="10%">10:50-11:35</th>
+					    	<th class="drop" id="t_row2_d5" colspan="10%">11:45-12:30</th>
+					    	<th class="drop" id="t_row2_d6" colspan="10%">12:45-13:30</th>
+					    	<th class="drop" id="t_row2_d7" colspan="10%">13:30-14:25</th>
+					    	<th class="drop" id="t_row2_d8" colspan="10%">14:30-15:15</th>
+					    	<th class="drop" id="t_row2_d9" colspan="10%">15:20-16:00</th>
+					    </tr>
+
+					  </thead>
+					  <tbody id="t_body">
+					  </tbody>
+
+					</table>
+		 		</div>	 		
+		 	</div>	 				
+		</div>
+
+	</div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>

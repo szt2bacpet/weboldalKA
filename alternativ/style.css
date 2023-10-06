@@ -1,0 +1,23 @@
+.col_lg_9{
+    transition: background-color 0.3s, color 0.3s;
+}
+	.subject_crumbs:hover
+	{
+		cursor: pointer;
+		 z-index: 9999;
+	}
+	.top {z-index: 100!important; position: relative}
+	.bottom {z-index: 10!important; position: relative}
+	table.table-bordered > thead > tr > th
+	{
+ 	 border:2px solid royalblue;
+	}
+	table.table-bordered > tbody > tr > th
+	{
+ 	 border:2px solid royalblue;
+	}	
+	table.table-bordered > tbody > tr > td
+	{
+ 	 border:2px solid black;
+	}
+	

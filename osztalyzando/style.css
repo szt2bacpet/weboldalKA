@@ -1,0 +1,83 @@
+:root {
+    --background-color-light: #f0f0f0; /* Világos háttérszín */
+    --text-color-light: #333; /* Világos szövegszín */
+    --background-color-dark: #222; /* Sötét háttérszín */
+    --text-color-dark: #fff; /* Sötét szövegszín */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color-light); /* Alapértelmezett világos háttérszín */
+    color: var(--text-color-light); /* Alapértelmezett világos szövegszín */
+    transition: background-color 0.3s, color 0.3s; /* Átmeneti animáció */
+    background-image: url(bg.jpg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Átlátszóság */
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+.extra {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.mode-toggle {
+    background-color: var(--background-color-light); /* Alapértelmezett világos háttérszín */
+    border: 1px solid var(--text-color-light); /* Alapértelmezett világos szövegszín */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.day-name h2 {
+    text-align: center; /* Nap nevének középre igazítása */
+    font-weight: bold; /* Félkövér betűtípus a nap nevéhez */
+    margin-bottom: 10px; /* Kicsi térköz a nap és az órák között */
+}
+
+
+.day {
+    flex-basis: calc(33.33% - 1200px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Dark mode stílusok */
+.dark-mode {
+    background-color: var(--background-color-dark) !important; /* Sötét háttérszín */
+    color: var(--text-color-dark) !important; /* Sötét szövegszín */
+}
+
+.dark-mode .mode-toggle {
+    background-color: var(--background-color-dark) !important; /* Sötét háttérszín */
+    border-color: var(--text-color-dark) !important; /* Sötét szövegszín */
+    color: var(--text-color-dark) !important; /* Sötét szövegszín */
+}
